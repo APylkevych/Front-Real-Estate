@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+
+/*  Menu */
+
+
+nav{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+#checkboxMenu, 
+.drop{
+    display: none;
+}
+
+.menu{
+margin: 0;
+padding: 0;
+height: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+    align-self: center;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: background 0.2s linear;
+}
+
+.menu li a:hover{
+    background-color:gold;
+    border-radius:  4px;
+}
+
+.menu li a.logo{
+    font-size: 25px;
+    margin-right: 250px;
+}
+
+.menu li a.contacts{
+    margin-right:100px;
+}
+
+
+
+/* Intro */
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+.intro {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.introImg{
+    background-image: url(img/introPhoto4.jpg);
+    width: 960px;
+    height: 635px;
+}
+
+.intro .introText{
+    position: absolute;
+    font-size: 62px;
+    right: 920px;
+    top:220px;
+    display: flex;
+}
+
+.introContacts{
+    background-color: gold;
+    max-width: 590px;
+    position:absolute;
+    right:170px;
+    top: 655px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-self: flex-end;
+}
+
+.introContacts i{
+    color: white;
+    margin-right: 30px;
+}
+
+.introContacts p{
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+.info{
+    display: flex;
+    margin-top: 130px;
+}
+.infoLine{
+    display:flex;
+}
+.infoText{
+    padding-right: 40px;
+    margin: 30px;
+}
+.infoText h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.infoText p{
+    font-size: 13px;
+    margin-top: 40px;
+    line-height: 27px;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: #f6f5f4;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquare{
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.squareText {
+    font-size: 14px;
+}
+
+.apartments{
+    background-color:#f6f5f4;
+    padding: 60px;
+}
+.apartments h2{
+    margin-bottom: 85px;
+    font-size: 40px;
+}
+
+.card{
+    max-width: 350px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.cardContainer{
+    padding:25px;
+}
+
+.cardInfo{
+    display: flex;
+justify-content: space-between;
+margin-top: 25px;
+}
+
+.cardInfo .price{
+   font-size: 18px;
+   color: gold; 
+
+}
+
+.cardInfo i{
+margin-right: 8px;
+}
+
+.cardInfo span:first-child{
+    margin-right: 18px;
+}
+
+.card:hover{
+    background: #fafaf9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    
+}
+
+.apart input[type=text]{
+    margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    border: none;
+    background-image: url(img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 25px;
+    outline: none;
+    padding-left: 60px;
+    font-size: 15px;
+    color: #919eb1;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px ;
+}
+
+.apart input[type=submit]{
+    width: 115px;
+    border: none;
+    height: 70px;
+    background-color: gold;
+    font-size: 15px;
+    margin-left: -4px;
+    border-top-right-radius: 6px ;
+    border-bottom-right-radius: 6px;
+    
+    
+}
+
+.all{
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.buttonSearch{
+    display: flex;
+    
+}
+
+.steps h2{
+    margin-top: 55px;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+
+.stepText{
+    line-height: 27px;
+    font-size: 13px;
+}
+
+.mbText
+{ margin-bottom: 70px;
+}
+
+.stepBlock{
+    width: 340px;
+    height: 370px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+
+.stepBlock .stepNum{
+    font-size: 200px;
+    font-weight: bold;
+    position: relative;
+    top: -100px;
+    left: -35px;
+}
+
+.stepBlock:hover{
+    background: gold;
+    color: white;
+}
+
+.stepsContainer{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepBlock h4{
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+.stepBlock h4 span{
+    margin-right: 15px;
+}
+
+.stepBlock .stepInfo{
+    margin-left: 70px;
+    line-height: 29px;
+}
+
+.stepBlock .stepInfoLast{
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-bottom:3px solid black ;
+}
+
+.stepBlock .stepInfoLast:hover{
+    border-bottom: 3px solid white;
+}
+
+.servContainer{
+    display: flex;
+    margin-top: 70px;
+}
+.services img{
+    width: 100%;
+    height: auto;
+}
+
+.servImgContainer{
+    width: 58%;
+}
+.servText{
+width: 42%;
+}
+.servText p{
+    margin-bottom: 60px;
+}
+.services h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.services p{
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.services p{
+    font-size: 25px;
+    margin-bottom: 25px;
+
+}
+
+/* Media */
+
+@media screen and (max-width:765px){
+    .drop{
+        clear:both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+        color:black;
+        background:gold;
+        transition: all 0.1s linear;
+    }
+    .drop:hover{
+        background: #ebdb2a;
+    }
+    #checkboxMenu:checked + label .point li{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.7s linear;
+    }
+
+    #checkboxMenu:checked + label .point{
+        height: 350px; 
+}
+
+    .menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height 0.2s linear;
+}
+    .menu li{
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu li a{
+        width: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    .menu li a.logo{
+        font-size: 20px;
+        margin-right: 0px;
+    }
+    
+    .menu li a.contacts{
+        margin-right:0px;
+    }
+    /*  
+.intro{
+    margin-top: Opx;
+    display: block;
+    max-width: 100%;
+}
+
+.introImg{
+    background-position: bottom 0px right 750px;
+}
+
+.intro .introText{
+    position: relative;
+    font-size:  35px;
+    right: 2000px;
+    top: 95px;
+}
+ .introContacts{
+       right: 20px;
+       top: -60px;
+       padding: 20px 10px;
+       position: relative;
+}
+
+.introContacts i{
+    margin-right: 10px;
+}
+
+.introContacts p{
+font-size: 13px;
+margin-right: 20px;
+}
+*/
+
+.info{
+    margin-top: 0;
+}
+
+.infoText{
+    padding: 10px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.infoText h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.infoText p{
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 18px;
+}
+.square{
+    height: 140px;
+    
+}
+.infoNum{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+}
+.wrapper, .infoLine{
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto) 20%;
+    grid-row-gap: 15px;  justify-items: center;
+    justify-content: center;
+}
+
+.apart input[type=text]{
+    margin-top: 20px;
+    width: 130px;
+
+}
+.buttonSearch{
+    flex-direction: column;
+    margin-left: 4%;
+    margin-top: 110px;
+}
+
+.all{
+    background: white;
+    margin-top: 10px;
+    margin-left: 0;
+
+}
+
+.stepsContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepBlock{
+    margin-top: 20px;
+}
+
+.stepText, .steps h2{
+    text-align: center;
+}
+
+.servContainer{
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servImgContainer{
+    margin-bottom: 20px;
+}
+
+.services{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+} /*media end*/
